@@ -1,11 +1,12 @@
-import Button from "./components/Button";
-import {IoAdd} from "react-icons/io5";
+import {Routes, Route, Navigate} from "react-router-dom";
+import ProductList from "./pages/ProductList";
 
 function App() {
   return (
-  <div>
-    <Button icon={<IoAdd/>} variant="text">Click Me</Button>
-  </div>
+    <Routes>
+      <Route path="/products" element={<ProductList/>} />
+      <Route path="*" element={<Navigate to="/products"/>}/>
+    </Routes>
   );
-}
+};
 export default App;
