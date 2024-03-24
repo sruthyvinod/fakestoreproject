@@ -29,8 +29,11 @@ module.exports = {
           '800': '#3d2aa9',
           '900': '#362986',
           '950': '#21184e',
-        },
+        }, 
       },    
+    },
+    fontFamily: {
+      sans:["fredoka", "sans-serif"],
     },
   },
   plugins: [],
